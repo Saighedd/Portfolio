@@ -99,18 +99,54 @@
         <!-- Add more projects as needed -->
 
     </section>
+    <audio id="audio-player" controls style="display: none;">
+        <!-- Add your audio sources here -->
+        <source src="song1.mp3" type="audio/mp3">
+        <source src="song2.mp3" type="audio/mp3">
+        <source src="song3.mp3" type="audio/mp3">
+        <source src="song1.mp3" type="audio/mp3">
+        <source src="song2.mp3" type="audio/mp3">
+        <source src="song3.mp3" type="audio/mp3">
+        <source src="song1.mp3" type="audio/mp3">
+        <source src="song2.mp3" type="audio/mp3">
+        <source src="song3.mp3" type="audio/mp3">
+        <source src="song1.mp3" type="audio/mp3">
+        <source src="song2.mp3" type="audio/mp3">
+        <source src="song3.mp3" type="audio/mp3">
+        <source src="song1.mp3" type="audio/mp3">
+        <source src="song2.mp3" type="audio/mp3">
+        <source src="song3.mp3" type="audio/mp3">
+    </audio>
 
     <script>
-        function fadeOutOverlay() {
+        document.addEventListener('DOMContentLoaded', function () {
+            const exploreButton = document.getElementById('explore-button');
             const overlay = document.getElementById('overlay');
             const section = document.querySelector('section');
+            const audioPlayer = document.getElementById('audio-player');
 
-            // Fade out the overlay
-            overlay.style.opacity = 0;
+            exploreButton.addEventListener('click', function () {
+                // Fade out the overlay
+                overlay.style.opacity = 0;
 
-            // Show the section
-            section.style.opacity = 1;
-            document.body.style.overflow = 'auto'; // Restore scrolling
-        }
+                // Show the section
+                section.style.opacity = 1;
+                document.body.style.overflow = 'auto'; // Restore scrolling
+
+                // Play a randomized song
+                const songs = [
+                    'song1.mp3',
+                    'song2.mp3',
+                    'song3.mp3',
+                    // Add more song URLs as needed
+                ];
+
+                const randomIndex = Math.floor(Math.random() * songs.length);
+                const selectedSong = songs[randomIndex];
+
+                audioPlayer.src = selectedSong;
+                audioPlayer.play();
+            });
+        });
     </script>
 </body></html>
