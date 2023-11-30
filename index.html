@@ -101,52 +101,65 @@
     </section>
     <audio id="audio-player" controls style="display: none;">
         <!-- Add your audio sources here -->
-        <source src="song1.mp3" type="audio/mp3">
-        <source src="song2.mp3" type="audio/mp3">
-        <source src="song3.mp3" type="audio/mp3">
-        <source src="song1.mp3" type="audio/mp3">
-        <source src="song2.mp3" type="audio/mp3">
-        <source src="song3.mp3" type="audio/mp3">
-        <source src="song1.mp3" type="audio/mp3">
-        <source src="song2.mp3" type="audio/mp3">
-        <source src="song3.mp3" type="audio/mp3">
-        <source src="song1.mp3" type="audio/mp3">
-        <source src="song2.mp3" type="audio/mp3">
-        <source src="song3.mp3" type="audio/mp3">
-        <source src="song1.mp3" type="audio/mp3">
-        <source src="song2.mp3" type="audio/mp3">
-        <source src="song3.mp3" type="audio/mp3">
+        <source src="https://github.com/Saighedd/Portfolio/raw/main/audio/01-Beef%20Rapp.mp3" type="audio/mp3">
+        <source src="https://github.com/Saighedd/Portfolio/raw/main/audio/02-Hoe%20Cakes.mp3" type="audio/mp3">
+        <source src="https://github.com/Saighedd/Portfolio/raw/main/audio/03-Potholderz%20(Ft.%20Count%20Bass%20D).mp3" type="audio/mp3">
+        <source src="https://github.com/Saighedd/Portfolio/raw/main/audio/04-One%20Beer.mp3" type="audio/mp3">
+        <source src="https://github.com/Saighedd/Portfolio/raw/main/audio/05-Deep%20Fried%20Frenz.mp3" type="audio/mp3">
+        <source src="https://github.com/Saighedd/Portfolio/raw/main/audio/06-Poo-Putt%20Platter.mp3" type="audio/mp3">
+        <source src="https://github.com/Saighedd/Portfolio/raw/main/audio/07-Fillet-O-Rapper.mp3" type="audio/mp3">
+        <source src="https://github.com/Saighedd/Portfolio/raw/main/audio/08-Gumbo.mp3" type="audio/mp3">
+        <source src="https://github.com/Saighedd/Portfolio/raw/main/audio/09-Fig%20Leaf%20Bi-Carbonate.mp3" type="audio/mp3">
+        <source src="https://github.com/Saighedd/Portfolio/raw/main/audio/10-Kon%20Karne.mp3" type="audio/mp3">
+        <source src="https://github.com/Saighedd/Portfolio/raw/main/audio/11-Guinesses%20(Ft.%20Angelika%20&%204ize).mp3" type="audio/mp3">
+        <source src="https://github.com/Saighedd/Portfolio/raw/main/audio/12-Kon%20Queso.mp3" type="audio/mp3">
+        <source src="https://github.com/Saighedd/Portfolio/raw/main/audio/13-Rapp%20Snitch%20Knishes%20(Ft.%20Mr.%20Fantastik).mp3" type="audio/mp3">
+        <source src="https://github.com/Saighedd/Portfolio/raw/main/audio/14-Vomitspit.mp3" type="audio/mp3">
+        <source src="https://github.com/Saighedd/Portfolio/raw/main/audio/15-Kookies.mp3" type="audio/mp3">
     </audio>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const exploreButton = document.getElementById('explore-button');
-            const overlay = document.getElementById('overlay');
-            const section = document.querySelector('section');
-            const audioPlayer = document.getElementById('audio-player');
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const exploreButton = document.getElementById('explore-button');
+        const overlay = document.getElementById('overlay');
+        const section = document.querySelector('section');
+        const audioPlayer = document.getElementById('audio-player');
 
-            exploreButton.addEventListener('click', function () {
-                // Fade out the overlay
-                overlay.style.opacity = 0;
+        exploreButton.addEventListener('click', function () {
+            // Fade out the overlay
+            overlay.style.opacity = 0;
 
-                // Show the section
-                section.style.opacity = 1;
-                document.body.style.overflow = 'auto'; // Restore scrolling
+            // Show the section
+            section.style.opacity = 1;
+            document.body.style.overflow = 'auto'; // Restore scrolling
 
-                // Play a randomized song
-                const songs = [
-                    'song1.mp3',
-                    'song2.mp3',
-                    'song3.mp3',
-                    // Add more song URLs as needed
-                ];
+            // Play a randomized song
+            const songs = [
+                'https://github.com/Saighedd/Portfolio/raw/main/audio/01-Beef%20Rapp.mp3',
+                'https://github.com/Saighedd/Portfolio/raw/main/audio/02-Hoe%20Cakes.mp3',
+                'https://github.com/Saighedd/Portfolio/raw/main/audio/03-Potholderz%20(Ft.%20Count%20Bass%20D).mp3',
+                'https://github.com/Saighedd/Portfolio/raw/main/audio/04-One%20Beer.mp3',
+                'https://github.com/Saighedd/Portfolio/raw/main/audio/05-Deep%20Fried%20Frenz.mp3',
+                'https://github.com/Saighedd/Portfolio/raw/main/audio/06-Poo-Putt%20Platter.mp3',
+                'https://github.com/Saighedd/Portfolio/raw/main/audio/07-Fillet-O-Rapper.mp3',
+                'https://github.com/Saighedd/Portfolio/raw/main/audio/08-Gumbo.mp3',
+                'https://github.com/Saighedd/Portfolio/raw/main/audio/09-Fig%20Leaf%20Bi-Carbonate.mp3',
+                'https://github.com/Saighedd/Portfolio/raw/main/audio/10-Kon%20Karne.mp3',
+                'https://github.com/Saighedd/Portfolio/raw/main/audio/11-Guinesses%20(Ft.%20Angelika%20&%204ize).mp3',
+                'https://github.com/Saighedd/Portfolio/raw/main/audio/12-Kon%20Queso.mp3',
+                'https://github.com/Saighedd/Portfolio/raw/main/audio/13-Rapp%20Snitch%20Knishes%20(Ft.%20Mr.%20Fantastik).mp3',
+                'https://github.com/Saighedd/Portfolio/raw/main/audio/14-Vomitspit.mp3',
+                'https://github.com/Saighedd/Portfolio/raw/main/audio/15-Kookies.mp3'
+                // Add more song URLs as needed
+            ];
 
-                const randomIndex = Math.floor(Math.random() * songs.length);
-                const selectedSong = songs[randomIndex];
+            const randomIndex = Math.floor(Math.random() * songs.length);
+            const selectedSong = songs[randomIndex];
 
-                audioPlayer.src = selectedSong;
-                audioPlayer.play();
-            });
+            audioPlayer.src = selectedSong;
+            audioPlayer.play();
         });
-    </script>
+    });
+</script>
+
 </body></html>
