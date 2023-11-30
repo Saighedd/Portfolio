@@ -507,14 +507,11 @@
             let charIndex = 0;
 
             function type() {
-                output.innerHTML += currentText.charAt(charIndex);
+                output.textContent += currentText.charAt(charIndex);
                 charIndex++;
                 if (charIndex < currentText.length) {
                     setTimeout(type, speed);
                 } else {
-                    if (index === texts.length - 1) {
-                        output.style.animation = 'none'; // Stop the blinking caret
-                    }
                     setTimeout(() => backspace(texts, index, speed), 1000);
                 }
             }
@@ -529,11 +526,12 @@
         let charIndex = currentText.length - 1;
 
         function erase() {
-            output.textContent = currentText.substring(0, charIndex + 1);
+            output.textContent = currentText.substring(0, charIndex);
             charIndex--;
             if (charIndex >= 0) {
                 setTimeout(erase, speed / 2);
             } else {
+                output.textContent += '\n'; // Add a new line to separate sentences
                 setTimeout(() => typeWriter(texts, index + 1, speed), 1000);
             }
         }
