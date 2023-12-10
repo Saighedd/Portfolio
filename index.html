@@ -31,21 +31,21 @@
             z-index: 999;
         }
 
-    .profile-container {
-    overflow: hidden;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 8px solid rgba(43,43,43,0);
-    background-color: rgba(43,43,43,0.7);
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -70px;
-    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
-    backface-visibility: visible;
-    backdrop-filter: blur(10px);
-}
+            .profile-container {
+            overflow: hidden;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 8px solid rgba(43,43,43,0);
+            background-color: rgba(43,43,43,0.7);
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: -70px;
+            box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
+            backface-visibility: visible;
+            backdrop-filter: blur(10px);
+        }
     
         #explore-button {
             background-color: transparent;
@@ -63,11 +63,11 @@
         }
             section {
             text-align: center;
-            max-width: 400px;
-            max-height: 550px;
+            width: 600px;
+            height: 418px;
             padding: 20px;
             background-color: rgba(43,43,43,0.5);
-            border-radius: 10px;
+            border-radius: 50px;
             transition: opacity 1s ease;
             box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
             backface-visibility: visible;
@@ -106,267 +106,265 @@
             margin-bottom: 20px;
         }
 
-@keyframes animate {
-    0%{
-        transform: translateY(0) rotate(0deg);
-        opacity: 1;
-        border-radius: 0;
+            @keyframes animate {
+                0%{
+                    transform: translateY(0) rotate(0deg);
+                    opacity: 1;
+                    border-radius: 0;
+        }
+                100%{
+                    transform: translateY(-1000px) rotate(720deg);
+                    opacity: 0;
+                    border-radius: 50%;
+        }
     }
-    100%{
-        transform: translateY(-1000px) rotate(720deg);
-        opacity: 0;
-        border-radius: 50%;
-    }
-}
 
-.background {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    background: #161616;
-    overflow: hidden;
-}
-.background li {
-    position: absolute;
-    display: block;
-    list-style: none;
-    width: 20px;
-    height: 20px;
-    background: rgba(255, 255, 255, 0.2);
-    animation: animate 33s linear infinite;
-}
+            .background {
+                position: fixed;
+                width: 100vw;
+                height: 100vh;
+                top: 0;
+                left: 0;
+                margin: 0;
+                padding: 0;
+                background: url('https://saighed.xyz/BG.png') center/cover; /* Use the correct image URL */
+                overflow: hidden;
+            }
+            
+            .background li {
+                position: absolute;
+                display: block;
+                list-style: none;
+                width: 20px;
+                height: 20px;
+                background: rgba(255, 255, 255, 0.2);
+                animation: animate 33s linear infinite;
+            }
 
-
-
-
-.background li:nth-child(0) {
-    left: 12%;
-    width: 208px;
-    height: 208px;
-    bottom: -208px;
-    animation-delay: 1s;
-}
-.background li:nth-child(1) {
-    left: 39%;
-    width: 62px;
-    height: 62px;
-    bottom: -62px;
-    animation-delay: 4s;
-}
-.background li:nth-child(2) {
-    left: 56%;
-    width: 83px;
-    height: 83px;
-    bottom: -83px;
-    animation-delay: 5s;
-}
-.background li:nth-child(3) {
-    left: 82%;
-    width: 86px;
-    height: 86px;
-    bottom: -86px;
-    animation-delay: 6s;
-}
-.background li:nth-child(4) {
-    left: 18%;
-    width: 84px;
-    height: 84px;
-    bottom: -84px;
-    animation-delay: 16s;
-}
-.background li:nth-child(5) {
-    left: 52%;
-    width: 236px;
-    height: 236px;
-    bottom: -236px;
-    animation-delay: 3s;
-}
-.background li:nth-child(6) {
-    left: 0%;
-    width: 72px;
-    height: 72px;
-    bottom: -72px;
-    animation-delay: 1s;
-}
-.background li:nth-child(7) {
-    left: 74%;
-    width: 89px;
-    height: 89px;
-    bottom: -89px;
-    animation-delay: 6s;
-}
-.background li:nth-child(8) {
-    left: 61%;
-    width: 200px;
-    height: 200px;
-    bottom: -200px;
-    animation-delay: 1s;
-}
-.background li:nth-child(9) {
-    left: 70%;
-    width: 163px;
-    height: 163px;
-    bottom: -163px;
-    animation-delay: 9s;
-}
-.background li:nth-child(10) {
-    left: 77%;
-    width: 201px;
-    height: 201px;
-    bottom: -201px;
-    animation-delay: 40s;
-}
-.background li:nth-child(11) {
-    left: 70%;
-    width: 98px;
-    height: 98px;
-    bottom: -98px;
-    animation-delay: 8s;
-}
-.background li:nth-child(12) {
-    left: 11%;
-    width: 160px;
-    height: 160px;
-    bottom: -160px;
-    animation-delay: 57s;
-}
-.background li:nth-child(13) {
-    left: 1%;
-    width: 179px;
-    height: 179px;
-    bottom: -179px;
-    animation-delay: 25s;
-}
-.background li:nth-child(14) {
-    left: 43%;
-    width: 190px;
-    height: 190px;
-    bottom: -190px;
-    animation-delay: 19s;
-}
-.background li:nth-child(15) {
-    left: 80%;
-    width: 136px;
-    height: 136px;
-    bottom: -136px;
-    animation-delay: 65s;
-}
-.background li:nth-child(16) {
-    left: 58%;
-    width: 253px;
-    height: 253px;
-    bottom: -253px;
-    animation-delay: 65s;
-}
-.background li:nth-child(17) {
-    left: 82%;
-    width: 244px;
-    height: 244px;
-    bottom: -244px;
-    animation-delay: 52s;
-}
-.background li:nth-child(18) {
-    left: 34%;
-    width: 250px;
-    height: 250px;
-    bottom: -250px;
-    animation-delay: 36s;
-}
-.background li:nth-child(19) {
-    left: 4%;
-    width: 211px;
-    height: 211px;
-    bottom: -211px;
-    animation-delay: 38s;
-}
-.background li:nth-child(20) {
-    left: 51%;
-    width: 72px;
-    height: 72px;
-    bottom: -72px;
-    animation-delay: 5s;
-}
-.background li:nth-child(21) {
-    left: 41%;
-    width: 73px;
-    height: 73px;
-    bottom: -73px;
-    animation-delay: 98s;
-}
-.background li:nth-child(22) {
-    left: 16%;
-    width: 124px;
-    height: 124px;
-    bottom: -124px;
-    animation-delay: 6s;
-}
-.background li:nth-child(23) {
-    left: 51%;
-    width: 67px;
-    height: 67px;
-    bottom: -67px;
-    animation-delay: 94s;
-}
-.background li:nth-child(24) {
-    left: 55%;
-    width: 130px;
-    height: 130px;
-    bottom: -130px;
-    animation-delay: 82s;
-}
-.background li:nth-child(25) {
-    left: 24%;
-    width: 247px;
-    height: 247px;
-    bottom: -247px;
-    animation-delay: 116s;
-}
-.background li:nth-child(26) {
-    left: 57%;
-    width: 162px;
-    height: 162px;
-    bottom: -162px;
-    animation-delay: 51s;
-}
-.background li:nth-child(27) {
-    left: 5%;
-    width: 103px;
-    height: 103px;
-    bottom: -103px;
-    animation-delay: 91s;
-}
-.background li:nth-child(28) {
-    left: 18%;
-    width: 125px;
-    height: 125px;
-    bottom: -125px;
-    animation-delay: 46s;
-}
-.background li:nth-child(29) {
-    left: 39%;
-    width: 183px;
-    height: 183px;
-    bottom: -183px;
-    animation-delay: 143s;
-}
-.background li:nth-child(30) {
-    left: 36%;
-    width: 207px;
-    height: 207px;
-    bottom: -207px;
-    animation-delay: 50s;
-}
-.background li:nth-child(31) {
-    left: 73%;
-    width: 128px;
-    height: 128px;
-    bottom: -128px;
-    animation-delay: 35s;
-}</style>
+        .background li:nth-child(0) {
+            left: 12%;
+            width: 208px;
+            height: 208px;
+            bottom: -208px;
+            animation-delay: 1s;
+        }
+        .background li:nth-child(1) {
+            left: 39%;
+            width: 62px;
+            height: 62px;
+            bottom: -62px;
+            animation-delay: 4s;
+        }
+        .background li:nth-child(2) {
+            left: 56%;
+            width: 83px;
+            height: 83px;
+            bottom: -83px;
+            animation-delay: 5s;
+        }
+        .background li:nth-child(3) {
+            left: 82%;
+            width: 86px;
+            height: 86px;
+            bottom: -86px;
+            animation-delay: 6s;
+        }
+        .background li:nth-child(4) {
+            left: 18%;
+            width: 84px;
+            height: 84px;
+            bottom: -84px;
+            animation-delay: 16s;
+        }
+        .background li:nth-child(5) {
+            left: 52%;
+            width: 236px;
+            height: 236px;
+            bottom: -236px;
+            animation-delay: 3s;
+        }
+        .background li:nth-child(6) {
+            left: 0%;
+            width: 72px;
+            height: 72px;
+            bottom: -72px;
+            animation-delay: 1s;
+        }
+        .background li:nth-child(7) {
+            left: 74%;
+            width: 89px;
+            height: 89px;
+            bottom: -89px;
+            animation-delay: 6s;
+        }
+        .background li:nth-child(8) {
+            left: 61%;
+            width: 200px;
+            height: 200px;
+            bottom: -200px;
+            animation-delay: 1s;
+        }
+        .background li:nth-child(9) {
+            left: 70%;
+            width: 163px;
+            height: 163px;
+            bottom: -163px;
+            animation-delay: 9s;
+        }
+        .background li:nth-child(10) {
+            left: 77%;
+            width: 201px;
+            height: 201px;
+            bottom: -201px;
+            animation-delay: 40s;
+        }
+        .background li:nth-child(11) {
+            left: 70%;
+            width: 98px;
+            height: 98px;
+            bottom: -98px;
+            animation-delay: 8s;
+        }
+        .background li:nth-child(12) {
+            left: 11%;
+            width: 160px;
+            height: 160px;
+            bottom: -160px;
+            animation-delay: 57s;
+        }
+        .background li:nth-child(13) {
+            left: 1%;
+            width: 179px;
+            height: 179px;
+            bottom: -179px;
+            animation-delay: 25s;
+        }
+        .background li:nth-child(14) {
+            left: 43%;
+            width: 190px;
+            height: 190px;
+            bottom: -190px;
+            animation-delay: 19s;
+        }
+        .background li:nth-child(15) {
+            left: 80%;
+            width: 136px;
+            height: 136px;
+            bottom: -136px;
+            animation-delay: 65s;
+        }
+        .background li:nth-child(16) {
+            left: 58%;
+            width: 253px;
+            height: 253px;
+            bottom: -253px;
+            animation-delay: 65s;
+        }
+        .background li:nth-child(17) {
+            left: 82%;
+            width: 244px;
+            height: 244px;
+            bottom: -244px;
+            animation-delay: 52s;
+        }
+        .background li:nth-child(18) {
+            left: 34%;
+            width: 250px;
+            height: 250px;
+            bottom: -250px;
+            animation-delay: 36s;
+        }
+        .background li:nth-child(19) {
+            left: 4%;
+            width: 211px;
+            height: 211px;
+            bottom: -211px;
+            animation-delay: 38s;
+        }
+        .background li:nth-child(20) {
+            left: 51%;
+            width: 72px;
+            height: 72px;
+            bottom: -72px;
+            animation-delay: 5s;
+        }
+        .background li:nth-child(21) {
+            left: 41%;
+            width: 73px;
+            height: 73px;
+            bottom: -73px;
+            animation-delay: 98s;
+        }
+        .background li:nth-child(22) {
+            left: 16%;
+            width: 124px;
+            height: 124px;
+            bottom: -124px;
+            animation-delay: 6s;
+        }
+        .background li:nth-child(23) {
+            left: 51%;
+            width: 67px;
+            height: 67px;
+            bottom: -67px;
+            animation-delay: 94s;
+        }
+        .background li:nth-child(24) {
+            left: 55%;
+            width: 130px;
+            height: 130px;
+            bottom: -130px;
+            animation-delay: 82s;
+        }
+        .background li:nth-child(25) {
+            left: 24%;
+            width: 247px;
+            height: 247px;
+            bottom: -247px;
+            animation-delay: 116s;
+        }
+        .background li:nth-child(26) {
+            left: 57%;
+            width: 162px;
+            height: 162px;
+            bottom: -162px;
+            animation-delay: 51s;
+        }
+        .background li:nth-child(27) {
+            left: 5%;
+            width: 103px;
+            height: 103px;
+            bottom: -103px;
+            animation-delay: 91s;
+        }
+        .background li:nth-child(28) {
+            left: 18%;
+            width: 125px;
+            height: 125px;
+            bottom: -125px;
+            animation-delay: 46s;
+        }
+        .background li:nth-child(29) {
+            left: 39%;
+            width: 183px;
+            height: 183px;
+            bottom: -183px;
+            animation-delay: 143s;
+        }
+        .background li:nth-child(30) {
+            left: 36%;
+            width: 207px;
+            height: 207px;
+            bottom: -207px;
+            animation-delay: 50s;
+        }
+        .background li:nth-child(31) {
+            left: 73%;
+            width: 128px;
+            height: 128px;
+            bottom: -128px;
+            animation-delay: 35s;
+        }</style>
 </head>
 <body style="overflow: auto;width: 100vw;height: 100vh;">
 
@@ -382,33 +380,52 @@
         <h1>Saighed</h1>
         <h2 id="output" style="font-size: 1.1rem;font-weight: normal;margin-left: auto;margin-right: auto;width: 350px;height: 21px;animation: auto ease 0s 1 normal none running none;">
 </h2>
-
-        <div class="project">
+    
+<sectionsmall style="opacity: 1;text-align: center;width: 25vw;height: 10vh;left: 3.5vw;padding: 20px;background-color: rgba(43,43,43,0.5);border-radius: 50px;transition: opacity 1s ease;box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);backface-visibility: visible;backdrop-filter: blur(10px);z-index: 2;position: absolute;">
+        <div class="project" style="
+    width: 200;
+    left: 1vw;
+    position: absolute;
+    top: 3.6vh;
+">
             <h3 style="
-    margin-top: 15px;
 ">SynPro</h3>
-            <p>Description of Project 1.</p>
-            <a href="https://github.com/Saighedd/SynPro">View SynPro</a>
+            <p style="
+    font-size: 1.2vh;
+    margin-bottom: 5px;
+    margin-top: 5px;
+">A Roblox Revival Userscript Including Many Useful Thing.</p>
+            <a href="https://github.com/Saighedd/SynPro" style="
+">View SynPro</a>
         </div>
 
-        <div class="project">
+        <div class="project" style="
+    width: 200;
+    right: 1vw;
+    position: absolute;
+    top: 3.6vh;
+">
             <h3>Blocked</h3>
-            <p>Description of Project 2.</p>
-            <a href="http://blocked.saighed.xyz">View Blocked</a>
+            <p style="
+    font-size: 1.2vh;
+    margin-top: 5px;
+    margin-bottom: 5px;
+">A Proxy Sharing Service Made To Use At School</p>
+            <a href="https://blocked.saighed.xyz">View Blocked</a>
         </div>
-
+</sectionsmall>
         
 
     </section>
     <audio id="audio-player" controls="" preload="auto" style="display: none;" src="https://github.com/Saighedd/Portfolio/raw/main/audio/02-Hoe%20Cakes.mp3">
         <!-- Add your audio sources here -->
-        <source src="https://github.com/Saighedd/Portfolio/raw/main/audio/01-Beef%20Rapp.mp3" type="audio/mp3">
-        <source src="https://github.com/Saighedd/Portfolio/raw/main/audio/02-Hoe%20Cakes.mp3" type="audio/mp3">
-        <source src="https://github.com/Saighedd/Portfolio/raw/main/audio/03-Potholderz%20(Ft.%20Count%20Bass%20D).mp3" type="audio/mp3">
-        <source src="https://github.com/Saighedd/Portfolio/raw/main/audio/04-One%20Beer.mp3" type="audio/mp3">
-        <source src="https://github.com/Saighedd/Portfolio/raw/main/audio/05-Deep%20Fried%20Frenz.mp3" type="audio/mp3">
-        <source src="https://github.com/Saighedd/Portfolio/raw/main/audio/06-Poo-Putt%20Platter.mp3" type="audio/mp3">
-        <source src="https://github.com/Saighedd/Portfolio/raw/main/audio/07-Fillet-O-Rapper.mp3" type="audio/mp3">
+        <source src="https://saighed.xyz/audio/01-Beef%20Rapp.mp3" type="audio/mp3">
+        <source src="https://saighed.xyz/audio/02-Hoe%20Cakes.mp3" type="audio/mp3">
+        <source src="https://saighed.xyz/audio/03-Potholderz%20(Ft.%20Count%20Bass%20D).mp3" type="audio/mp3">
+        <source src="https://saighed.xyz/audio/04-One%20Beer.mp3" type="audio/mp3">
+        <source src="https://saighed.xyz/audio/05-Deep%20Fried%20Frenz.mp3" type="audio/mp3">
+        <source src="https://saighed.xyz/audio/06-Poo-Putt%20Platter.mp3" type="audio/mp3">
+        <source src="https://saighed.xyz/audio/07-Fillet-O-Rapper.mp3" type="audio/mp3">
         <source src="https://github.com/Saighedd/Portfolio/raw/main/audio/08-Gumbo.mp3" type="audio/mp3">
         <source src="https://github.com/Saighedd/Portfolio/raw/main/audio/09-Fig%20Leaf%20Bi-Carbonate.mp3" type="audio/mp3">
         <source src="https://github.com/Saighedd/Portfolio/raw/main/audio/10-Kon%20Karne.mp3" type="audio/mp3">
