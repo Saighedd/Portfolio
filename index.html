@@ -73,7 +73,25 @@
             backface-visibility: visible;
             backdrop-filter: blur(10px);
             }
-    
+            
+            sectionsmall {
+            opacity: 1;
+            text-align: center;
+            width: 38vw;
+            height: 10vh;
+            left: 3.5vw;
+            padding: 20px;
+            background-color: rgba(43,43,43,0.5);
+            border-radius: 50px;
+            transition: opacity 1s ease;
+            box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
+            backface-visibility: visible;
+            backdrop-filter: blur(10px);
+            z-index: 2;
+            position: absolute;
+            margin-top: 5px;
+            }
+
         a {
             color: #808080;
             text-decoration: none;
@@ -373,7 +391,28 @@
     
 
     
-    <section style="opacity: 1;z-index: 2;">
+    <section style="opacity: 1;z-index: 2;"><div style="
+    text-align: center;
+    width: 50px;
+    height: 10px;
+    padding: 10px;
+    background-color: rgba(43,43,43,0.5);
+    border-radius: 50px;
+    transition: opacity 1s ease;
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
+    backface-visibility: visible;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    right: 40px;
+    top: 40px;
+">
+                  <img alt="Eye Icon" loading="lazy" decoding="async" data-nimg="1" class="" style="color:transparent;position: absolute;left: 4px;margin-top: -4px;" src="eye-password-show.png" width="16" height="20">
+                  <p id="views" style="
+    margin-top: -4px;
+    margin-left: 4px;
+">...</p>
+               </div>
+            
             <div class="profile-container">
         <img src="https://saighed.xyz/pfp.png" alt="Saighed PFP">
     </div>
@@ -381,7 +420,7 @@
         <h2 id="output" style="font-size: 1.1rem;font-weight: normal;margin-left: auto;margin-right: auto;width: 350px;height: 21px;animation: auto ease 0s 1 normal none running none;">
 </h2>
     
-<sectionsmall style="opacity: 1;text-align: center;width: 25vw;height: 10vh;left: 3.5vw;padding: 20px;background-color: rgba(43,43,43,0.5);border-radius: 50px;transition: opacity 1s ease;box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);backface-visibility: visible;backdrop-filter: blur(10px);z-index: 2;position: absolute;">
+<sectionsmall style="">
         <div class="project" style="
     width: 200;
     left: 1vw;
@@ -559,6 +598,7 @@
 
     typeWriter(texts, 0, 100);
 </script>
+
 
 
 </body></html>
