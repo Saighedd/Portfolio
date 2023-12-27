@@ -1,7 +1,7 @@
 <?php
-$secret_key = "rot5groomsminors234123123"; //Set this as your secret key, to prevent others uploading to your server.
+$secret_key = "SaighedPrivate"; //Set this as your secret key, to prevent others uploading to your server.
 $sharexdir = "images/"; //This is your file dir, also the link..
-$domain_url = 'http://grooming.lol/';
+$domain_url = 'https://saighed.xyz/';
 $lengthofstring = 8; //Length of the file name
 
 function RandomString($length) {
